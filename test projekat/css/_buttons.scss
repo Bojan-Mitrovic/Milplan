@@ -1,0 +1,162 @@
+@use 'colors';
+.first-page-btn {
+    border: 1px solid white;
+    width: 194px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    &:hover {
+        background: white;
+        color: colors.$primary;
+    }
+    .plus {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        font-size: 40px;
+        line-height: 22px;
+        font-weight: 200;
+        text-align: center;
+        &:before {
+            content: "+";
+        }
+    }
+    span {
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+}
+
+.no-border-btn {
+    border: none;
+    color: colors.$primary;
+    justify-content: start;
+    width: 150px;
+    height: 38px;
+    margin: 15px 0 0 45px;
+    span {
+        padding-left: 5px;
+        font-weight: 600;
+    }
+    &:hover {
+        border: none;
+        background: colors.$primary;
+    }
+}
+
+.buro-btn {
+    position: relative;
+    width: 550px;
+    height: 47px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    cursor: pointer;
+    color: colors.$primary;
+    border: 1px solid colors.$primary;
+    transition: 0.5s;
+    &:hover {
+        background: colors.$primary;
+        color: white;
+    }
+    .buro-plus {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        font-size: 40px;
+        line-height: 22px;
+        font-weight: 200;
+        text-align: center;
+        &:before {
+            content: "+";
+        }
+    }
+    .buro-minus {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        font-size: 40px;
+        line-height: 22px;
+        font-weight: 200;
+        text-align: center;
+        &:before {
+            content: "-";
+        }
+    }
+    span {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.buro-extra-btn {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    left: 139px;
+    bottom: 94px;
+    border: 1px solid white;
+    width: 292px;
+    height: 48px;
+    padding: 0 15px;
+    span {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.portfolio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 292px;
+    height: 49px;
+    color: colors.$primary;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid colors.$primary;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+        background: colors.$primary;
+        color: white;
+    }
+    img {
+        padding: 0 25px 0 18px;
+    }
+    span {
+        padding-right: 34px;
+        font-size: 16px;
+    }
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 292px;
+    height: 48px;
+    position: absolute;
+    bottom: 86px;
+    color: colors.$primary;
+    border: 1px solid colors.$primary;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+        background: colors.$primary;
+        color: white;
+    }
+    span {
+        font-weight: 700;
+    }
+}

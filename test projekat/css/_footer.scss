@@ -1,0 +1,25 @@
+.footer {
+    background: #313131;
+    height: 123px;
+    width: 1366px;
+    padding: 0 139px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .footer-details,
+    .impressum {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 23px;
+    }
+    .footer-details {
+        width: 819px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.buro-footer {
+    position: relative;
+}

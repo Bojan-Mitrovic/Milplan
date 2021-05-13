@@ -1,0 +1,23 @@
+$primary: #DC514C;
+a {
+    color: $primary;
+}
+
+.second-part,
+.grid-item4,
+.president,
+.extra-div {
+    background: $primary;
+}
+
+.buro-intro-text {
+    h2 {
+        color: $primary!important;
+    }
+}
+
+.nathalie-text {
+    h2 {
+        color: black;
+    }
+}

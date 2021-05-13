@@ -1,0 +1,91 @@
+@use 'colors';
+.header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 60px 25px 60px;
+    margin: 40px 0 203px 0;
+    z-index: 2;
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 42px;
+        width: 202px;
+        background: white;
+        padding: 5px;
+        img {
+            width: 191px;
+            height: 32px;
+        }
+    }
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            li {
+                a {
+                    padding-left: 50px;
+                    font-size: 18px;
+                    text-decoration: none;
+                    letter-spacing: 21;
+                }
+            }
+        }
+    }
+    // active page 
+    ul li.active a {
+        color: black!important;
+    }
+}
+
+// home header 
+.home-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+}
+
+// buro header
+.buro-header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 59px;
+    margin-bottom: 106px;
+    padding: 0 60px;
+    .logo {
+        left: 39px;
+    }
+}
+
+// portfolio header 
+.portfolio-header {
+    margin: 27px 0 0 0;
+    display: flex;
+    align-items: center;
+    height: 59px;
+    padding: 0 60px 0 60px;
+}
+
+//contact header
+.contact-header {
+    margin: 65px 0 18px 0;
+    height: 59px;
+    display: flex;
+    align-items: center;
+}
+
+// header changing color and background on scroll 
+.nav-scrolled {
+    background: colors.$primary;
+    color: white;
+}

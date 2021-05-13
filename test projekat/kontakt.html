@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TEST</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- top part -->
+        <div class="contact-img">
+            <img src="./css/images/kontakt-top.png" alt="">
+        </div>
+        <div class="contact-headline">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="contact-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+        </div>
+        <!-- header  -->
+        <header class="header contact-header">
+            <div class="logo">
+                <a href="./index.html"><img src="./css/images/RZ_Logo-milplan_RGB.png" alt="logo"></a>
+            </div>
+            <!-- navbar  -->
+            <nav class="nav-bar">
+                <ul>
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a id="buro" class="link" href="büro.html">Büro</a></li>
+                    <li><a id="dienstleistungen" class="link" href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a id="portfolio" class="link" href="portfolio.html">Portfolio</a></li>
+                    <li><a id="kontakt" class="link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- contact form  -->
+        <div class="contact-form">
+            <div class="company contact-item">
+                <input type="text" name="company" placeholder="zweikraft GmbH">
+                <label for="company">Firma / Organisation</label>
+            </div>
+            <!-- name  -->
+            <div class="right-part">
+                <div class="name">
+                    <div class="first-name contact-item">
+                        <input type="text" name="name" placeholder="Stefan">
+                        <label for="name">Vorname</label>
+                    </div>
+                    <div class="last-name contact-item">
+                        <input type="text" name="surname" placeholder="Jurendic">
+                        <label for="surname">Nachname</label>
+                    </div>
+                </div>
+                <!-- details  -->
+                <div class="details">
+                    <div class="phone contact-item">
+                        <input type="number" name="phone" id="phone" placeholder="041 420 30 40">
+                        <label for="phone">Telefon</label>
+                    </div>
+                    <div class="email contact-item">
+                        <input type="email" name="'email" id="email" placeholder="stefan@zweikraft.ch">
+                        <label for="email">E-Mail</label>
+                    </div>
+                </div>
+                <!-- text area  -->
+                <div class="textarea contact-item">
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Text..."></textarea>
+                    <label for="text">Ihre Mitteilung</label>
+                </div>
+                <div class="contact-btn">
+                    <span>Formular Senden</span>
+                </div>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="footer">
+            <div class="logo">
+                <a href="./index.html"><img src="./css/images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="footer-details">
+                <p>Milplan GmbH | Nathalie Mil | Steinhofrain 20 | 6005 Luzern | + 41 (0)79 730 66 18 | nathalie.mil@milplan.ch</p>
+            </div>
+            <div class="impressum">
+                <p>impressum</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./JS/activeNavElement.js "></script>
+    <script src="./JS/scrollHeader.js"></script>
+
+</body>
+
+</html>
