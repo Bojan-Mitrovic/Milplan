@@ -3,6 +3,7 @@
 @use 'colors';
 @use 'buttons';
 @use 'footer';
+@use 'grid';
 * {
     margin: 0;
     padding: 0;
@@ -46,14 +47,13 @@ body {
     width: 100%;
     padding: 200px 0 0 511px;
     h2 {
+        @include fonts.heading;
         padding-bottom: 40px;
     }
     p {
+        @include fonts.regular;
         width: 622px;
         color: white;
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 35px;
         padding-bottom: 40px;
     }
 }
@@ -69,16 +69,15 @@ body {
     background-size: cover;
     padding: 300px 213px 0 621px;
     h2 {
+        @include fonts.heading;
         width: 834px;
         padding-bottom: 40px;
         line-height: 45px;
     }
     p {
+        @include fonts.regular;
         width: 553px;
         color: white;
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 35px;
         padding-bottom: 40px;
     }
 }
@@ -92,6 +91,7 @@ body {
 }
 
 .fourth-title {
+    @include fonts.heading;
     position: relative;
     margin: 195px 0 41px 137px;
     color: black;
@@ -111,6 +111,7 @@ body {
         width: 530px;
         height: 337px;
         h3 {
+            @include fonts.heading2;
             padding: 195px 0 0 45px;
             line-height: 45px;
         }
@@ -134,28 +135,44 @@ body {
             height: 100px;
         }
         h3 {
+            @include fonts.heading2;
             padding: 28px 0 0 45px;
             color: black;
             line-height: 35px;
         }
         p {
+            @include fonts.small;
             padding: 28px 0 0 45px;
             color: black;
             width: 464px;
-            font-size: 18px;
-            font-weight: 300;
+        }
+        #link {
+            @include fonts.small;
+            background: white;
+            box-shadow: 0 0 4px white;
+            border: 1px solid white;
+            color: colors.$primary;
+            display: none;
+            position: absolute;
+            right: 30px;
+            margin-top: 10px;
+            padding: 4px;
+            width: 200px;
         }
         &:hover {
             background: colors.$primary;
+            #link {
+                display: block;
+            }
             h3,
             p {
                 color: white;
             }
             .no-border-btn {
                 color: white;
-            }
-            a {
-                display: block;
+                span {
+                    color: white;
+                }
             }
         }
     }
@@ -163,6 +180,7 @@ body {
 
 // 5th part 
 .projects-title {
+    @include fonts.heading;
     position: relative;
     margin: 176px 0 65px 139px;
     width: 720px;
@@ -175,7 +193,8 @@ body {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 11px;
+    grid-gap: 2px;
+    margin-bottom: 5px;
 }
 
 .project-item {
@@ -186,12 +205,13 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: 0.5s;
         z-index: 2;
     }
     h3 {
-        width: 390px;
+        @include fonts.heading2;
+        width: 90%;
         padding: 0 0 0 35px;
         font-size: 35px;
         line-height: 39px;
@@ -203,8 +223,8 @@ body {
         font-size: 18px;
         font-weight: 600;
         color: white;
-        line-height: 18px;
-        margin: 14px 16px 0 35px;
+        line-height: 21px;
+        margin: 14px 16px 10px 35px;
         z-index: 2;
     }
 }
@@ -215,7 +235,7 @@ body {
     left: 0;
     bottom: 0;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.6;
     background: black;
 }
 
@@ -267,17 +287,17 @@ body {
         color: white;
         flex-direction: column;
         padding: 187px 251px 0 507px;
-        h3 {
+        h2 {
+            @include fonts.heading;
             width: 608px;
             height: 81px;
             padding-bottom: 14px;
         }
         p {
+            @include fonts.regular;
             width: 710px;
             height: 354px;
             line-height: 35px;
-            font-size: 25px;
-            font-weight: 300;
         }
         span {
             font-size: 22px;
@@ -311,6 +331,7 @@ body {
 
 // 7th part 
 .collaborants-title {
+    @include fonts.heading;
     position: relative;
     color: black;
     margin: 112px 0 36px 136px;
@@ -344,15 +365,13 @@ body {
     width: 950px;
     margin: 116px 0 140px 137px;
     h2 {
+        @include fonts.heading;
+        color: colors.$primary;
         line-height: 45px;
     }
 }
 
 //main part
-.about-nathalie {
-    margin-left: 49px;
-}
-
 .nathalie-container {
     position: relative;
     height: 702px;
@@ -365,13 +384,16 @@ body {
         height: 702px;
         width: 557px;
     }
+    .about-nathalie {
+        margin-left: 49px;
+    }
 }
 
 // nathalie headline 
 .nathalie-headline {
     margin-bottom: 53px;
     h2 {
-        font-weight: 300;
+        @include fonts.heading;
         line-height: 40px;
         margin-bottom: 30px;
         color: black;
@@ -383,9 +405,7 @@ body {
     width: 628px;
     height: 385px;
     p {
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 35px;
+        @include fonts.regular;
         margin-bottom: 30px;
     }
     span {
@@ -403,6 +423,7 @@ body {
     padding: 94px 149px 0 139px;
     p {
         font-size: 22px;
+        font-weight: 300;
         color: white;
         border-bottom: 1px solid white;
         line-height: 25px;
@@ -419,6 +440,7 @@ body {
     height: 470px;
     background: #F6F6F6;
     h2 {
+        @include fonts.heading;
         padding: 126px 139px 72px 139px;
         width: 720px;
         color: black;
@@ -443,6 +465,7 @@ iframe {
 // first part 
 .headline-portfolio {
     margin: 96px 0 0 141px;
+    @include fonts.heading;
     color: colors.$primary;
 }
 
@@ -451,21 +474,27 @@ iframe {
     display: flex;
     .left {
         margin: 70px 0 29px 142px;
-        width: 794px;
+        width: 652px;
         height: 587px;
-        font-size: 22px;
-        line-height: 28px;
+        .main-text {
+            font-size: 22px;
+            line-height: 28px;
+        }
     }
     .right {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 325px;
+        height: 350px;
         width: 355px;
-        margin: 70px 139px;
+        margin: 70px 0 0 60px;
         font-size: 18px;
+        p {
+            margin-bottom: 5px;
+        }
         span {
             font-weight: 600;
+            line-height: 26px;
         }
     }
 }
@@ -476,23 +505,25 @@ iframe {
         height: auto;
         margin: 0 0 79px 142px;
         p {
-            font-size: 18px;
+            @include fonts.small;
             padding-top: 17px;
-            font-weight: 300;
         }
     }
 }
 
 .portfolio-grid-wrap {
     h2 {
+        @include fonts.heading;
         color: black;
-        padding: 98px 0 60px 139px;
+        padding: 98px 0 70px 139px;
     }
     background: #F2F2F2;
     .portfolio-grid-container {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px;
+        margin-bottom: 2px;
     }
 }
 
@@ -501,6 +532,7 @@ iframe {
 .contact-headline {
     margin: 140px 0 0 137px;
     h2 {
+        @include fonts.heading;
         color: colors.$primary;
     }
 }

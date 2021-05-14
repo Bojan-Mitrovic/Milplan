@@ -1,3 +1,18 @@
+a {
+  color: #DC514C;
+}
+
+.second-part,
+.grid-item4,
+.president,
+.extra-div {
+  background: #DC514C;
+}
+
+.nathalie-text h2 {
+  color: black;
+}
+
 @font-face {
   font-family: "Work Sans";
   src: url("./fonts/WorkSans-ExtraLight.woff") format("woff");
@@ -34,39 +49,6 @@
   font-weight: 700;
   font-style: normal;
 }
-h2 {
-  font-size: 40px;
-  color: white;
-  line-height: 65px;
-  font-weight: 300;
-}
-
-h3 {
-  font-size: 35px;
-  color: white;
-  line-height: 65px;
-  font-weight: 300;
-}
-
-a {
-  color: #DC514C;
-}
-
-.second-part,
-.grid-item4,
-.president,
-.extra-div {
-  background: #DC514C;
-}
-
-.buro-intro-text h2 {
-  color: #DC514C !important;
-}
-
-.nathalie-text h2 {
-  color: black;
-}
-
 .header {
   display: flex;
   position: sticky;
@@ -161,10 +143,6 @@ a {
   color: white;
   transition: 0.5s;
 }
-.first-page-btn:hover {
-  background: white;
-  color: #DC514C;
-}
 .first-page-btn .plus {
   height: 24px;
   width: 24px;
@@ -180,24 +158,32 @@ a {
 .first-page-btn span {
   font-size: 16px;
   font-weight: 600;
+  color: #DC514C;
+  color: white;
   padding-left: 20px;
+}
+
+.btn-hover:hover {
+  background: white;
+}
+.btn-hover:hover span,
+.btn-hover:hover .plus {
+  color: #DC514C;
 }
 
 .no-border-btn {
   border: none;
-  color: #DC514C;
   justify-content: start;
+  color: #DC514C;
   width: 150px;
   height: 38px;
   margin: 15px 0 0 45px;
 }
 .no-border-btn span {
   padding-left: 5px;
+  font-size: 16px;
   font-weight: 600;
-}
-.no-border-btn:hover {
-  border: none;
-  background: #DC514C;
+  color: #DC514C;
 }
 
 .buro-btn {
@@ -261,20 +247,21 @@ a {
   padding: 0 15px;
 }
 .buro-extra-btn span {
-  color: white;
   font-size: 16px;
   font-weight: 600;
+  color: #DC514C;
+  color: white;
 }
 
 .portfolio-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #DC514C;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 292px;
   height: 49px;
-  color: #DC514C;
-  font-weight: 600;
-  font-size: 16px;
   border: 1px solid #DC514C;
   cursor: pointer;
   transition: 0.5s;
@@ -309,7 +296,9 @@ a {
   color: white;
 }
 .contact-btn span {
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
+  color: #DC514C;
 }
 
 .footer {
@@ -338,6 +327,111 @@ a {
   position: relative;
 }
 
+@media screen and (min-width: 1400px) {
+  .grid-xl {
+    width: 1370px;
+  }
+
+  .col-12-xl {
+    width: 100%;
+  }
+
+  .col-6-xl {
+    width: 50%;
+  }
+
+  .col-4-xl {
+    width: 33.333%;
+  }
+
+  .col-3-xl {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .grid-lg {
+    width: 1170px;
+  }
+
+  .col-12-lg {
+    width: 100%;
+  }
+
+  .col-6-lg {
+    width: 50%;
+  }
+
+  .col-4-lg {
+    width: 33.333%;
+  }
+
+  .col-3-lg {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .grid-md {
+    width: 962px;
+  }
+
+  .col-12-md {
+    width: 100%;
+  }
+
+  .col-6-md {
+    width: 50%;
+  }
+
+  .col-4-md {
+    width: 33.333%;
+  }
+
+  .col-3-md {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 778px) and (max-width: 991px) {
+  .grid-sm {
+    width: 738px;
+  }
+
+  .col-12-sm {
+    width: 100%;
+  }
+
+  .col-6-sm {
+    width: 50%;
+  }
+
+  .col-4-sm {
+    width: 33.333%;
+  }
+
+  .col-3-sm {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 777px) {
+  .grid-xs {
+    width: 100%;
+  }
+
+  .col-12-xs {
+    width: 100%;
+  }
+
+  .col-6-xs {
+    width: 50%;
+  }
+
+  .col-4-xs {
+    width: 33.333%;
+  }
+
+  .col-3-xs {
+    width: 25%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -380,14 +474,18 @@ body {
   padding: 200px 0 0 511px;
 }
 .second-part h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   padding-bottom: 40px;
 }
 .second-part p {
-  width: 622px;
-  color: white;
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
+  width: 622px;
+  color: white;
   padding-bottom: 40px;
 }
 
@@ -402,16 +500,20 @@ body {
   padding: 300px 213px 0 621px;
 }
 .third-part h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   width: 834px;
   padding-bottom: 40px;
   line-height: 45px;
 }
 .third-part p {
-  width: 553px;
-  color: white;
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
+  width: 553px;
+  color: white;
   padding-bottom: 40px;
 }
 
@@ -423,6 +525,10 @@ body {
 }
 
 .fourth-title {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   position: relative;
   margin: 195px 0 41px 137px;
   color: black;
@@ -444,6 +550,10 @@ body {
   height: 337px;
 }
 .grid-four-images .grid-item h3 {
+  font-size: 35px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   padding: 195px 0 0 45px;
   line-height: 45px;
 }
@@ -467,19 +577,40 @@ body {
   height: 100px;
 }
 .grid-four-images .grid-item4 h3 {
+  font-size: 35px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   padding: 28px 0 0 45px;
   color: black;
   line-height: 35px;
 }
 .grid-four-images .grid-item4 p {
+  font-size: 18px;
+  font-weight: 300;
   padding: 28px 0 0 45px;
   color: black;
   width: 464px;
+}
+.grid-four-images .grid-item4 #link {
   font-size: 18px;
   font-weight: 300;
+  background: white;
+  box-shadow: 0 0 4px white;
+  border: 1px solid white;
+  color: #DC514C;
+  display: none;
+  position: absolute;
+  right: 30px;
+  margin-top: 10px;
+  padding: 4px;
+  width: 200px;
 }
 .grid-four-images .grid-item4:hover {
   background: #DC514C;
+}
+.grid-four-images .grid-item4:hover #link {
+  display: block;
 }
 .grid-four-images .grid-item4:hover h3,
 .grid-four-images .grid-item4:hover p {
@@ -488,11 +619,15 @@ body {
 .grid-four-images .grid-item4:hover .no-border-btn {
   color: white;
 }
-.grid-four-images .grid-item4:hover a {
-  display: block;
+.grid-four-images .grid-item4:hover .no-border-btn span {
+  color: white;
 }
 
 .projects-title {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   position: relative;
   margin: 176px 0 65px 139px;
   width: 720px;
@@ -505,7 +640,8 @@ body {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 11px;
+  grid-gap: 2px;
+  margin-bottom: 5px;
 }
 
 .project-item {
@@ -517,12 +653,16 @@ body {
   justify-content: flex-end;
 }
 .project-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.5s;
   z-index: 2;
 }
 .project-item h3 {
-  width: 390px;
+  font-size: 35px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
+  width: 90%;
   padding: 0 0 0 35px;
   font-size: 35px;
   line-height: 39px;
@@ -534,8 +674,8 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  line-height: 18px;
-  margin: 14px 16px 0 35px;
+  line-height: 21px;
+  margin: 14px 16px 10px 35px;
   z-index: 2;
 }
 
@@ -545,7 +685,7 @@ body {
   left: 0;
   bottom: 0;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.6;
   background: black;
 }
 
@@ -598,17 +738,22 @@ body {
   flex-direction: column;
   padding: 187px 251px 0 507px;
 }
-.president .president-text h3 {
+.president .president-text h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   width: 608px;
   height: 81px;
   padding-bottom: 14px;
 }
 .president .president-text p {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
   width: 710px;
   height: 354px;
   line-height: 35px;
-  font-size: 25px;
-  font-weight: 300;
 }
 .president .president-text span {
   font-size: 22px;
@@ -639,6 +784,10 @@ body {
 }
 
 .collaborants-title {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   position: relative;
   color: black;
   margin: 112px 0 36px 136px;
@@ -671,11 +820,12 @@ body {
   margin: 116px 0 140px 137px;
 }
 .buro-intro-text h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
+  color: #DC514C;
   line-height: 45px;
-}
-
-.about-nathalie {
-  margin-left: 49px;
 }
 
 .nathalie-container {
@@ -691,11 +841,17 @@ body {
   height: 702px;
   width: 557px;
 }
+.nathalie-container .about-nathalie {
+  margin-left: 49px;
+}
 
 .nathalie-headline {
   margin-bottom: 53px;
 }
 .nathalie-headline h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
   font-weight: 300;
   line-height: 40px;
   margin-bottom: 30px;
@@ -727,6 +883,7 @@ body {
 }
 .extra-div p {
   font-size: 22px;
+  font-weight: 300;
   color: white;
   border-bottom: 1px solid white;
   line-height: 25px;
@@ -742,6 +899,10 @@ body {
   background: #F6F6F6;
 }
 .buro-logo-wrapper h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   padding: 126px 139px 72px 139px;
   width: 720px;
   color: black;
@@ -762,6 +923,10 @@ iframe {
 
 .headline-portfolio {
   margin: 96px 0 0 141px;
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   color: #DC514C;
 }
 
@@ -771,8 +936,10 @@ iframe {
 }
 .portfolio-first-part .left {
   margin: 70px 0 29px 142px;
-  width: 794px;
+  width: 652px;
   height: 587px;
+}
+.portfolio-first-part .left .main-text {
   font-size: 22px;
   line-height: 28px;
 }
@@ -780,13 +947,17 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 325px;
+  height: 350px;
   width: 355px;
-  margin: 70px 139px;
+  margin: 70px 0 0 60px;
   font-size: 18px;
+}
+.portfolio-first-part .right p {
+  margin-bottom: 5px;
 }
 .portfolio-first-part .right span {
   font-weight: 600;
+  line-height: 26px;
 }
 
 .portfolio-img-container .portfolio-img {
@@ -796,27 +967,37 @@ iframe {
 }
 .portfolio-img-container .portfolio-img p {
   font-size: 18px;
-  padding-top: 17px;
   font-weight: 300;
+  padding-top: 17px;
 }
 
 .portfolio-grid-wrap {
   background: #F2F2F2;
 }
 .portfolio-grid-wrap h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   color: black;
-  padding: 98px 0 60px 139px;
+  padding: 98px 0 70px 139px;
 }
 .portfolio-grid-wrap .portfolio-grid-container {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  margin-bottom: 2px;
 }
 
 .contact-headline {
   margin: 140px 0 0 137px;
 }
 .contact-headline h2 {
+  font-size: 40px;
+  color: white;
+  line-height: 65px;
+  font-weight: 300;
   color: #DC514C;
 }
 

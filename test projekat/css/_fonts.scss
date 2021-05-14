@@ -1,3 +1,4 @@
+@use 'colors';
 @font-face {
     font-family: 'Work Sans';
     src: url('./fonts/WorkSans-ExtraLight.woff') format('woff');
@@ -40,16 +41,34 @@
     font-style: normal;
 }
 
-h2 {
+// mixins
+@mixin heading {
     font-size: 40px;
     color: white;
     line-height: 65px;
     font-weight: 300;
 }
 
-h3 {
+@mixin heading2 {
     font-size: 35px;
     color: white;
     line-height: 65px;
     font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+@mixin small {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@mixin btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: colors.$primary;
 }
