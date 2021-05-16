@@ -282,11 +282,16 @@ body {
         left: 0;
         bottom: 0;
     }
-    .president-text {
+    #slideshow {
+        position: relative;
+        height: 710px;
+        width: 647px;
+        padding: 187px 251px 0 507px;
+    }
+    .president-slide {
         display: flex;
         color: white;
         flex-direction: column;
-        padding: 187px 251px 0 507px;
         h2 {
             @include fonts.heading;
             width: 608px;
@@ -303,6 +308,7 @@ body {
             font-size: 22px;
             font-weight: 600;
             margin-bottom: 187px;
+            width: 450px;
         }
     }
     .dot-container {

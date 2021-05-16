@@ -732,13 +732,18 @@ body {
   left: 0;
   bottom: 0;
 }
-.president .president-text {
+.president #slideshow {
+  position: relative;
+  height: 710px;
+  width: 647px;
+  padding: 187px 251px 0 507px;
+}
+.president .president-slide {
   display: flex;
   color: white;
   flex-direction: column;
-  padding: 187px 251px 0 507px;
 }
-.president .president-text h2 {
+.president .president-slide h2 {
   font-size: 40px;
   color: white;
   line-height: 65px;
@@ -747,7 +752,7 @@ body {
   height: 81px;
   padding-bottom: 14px;
 }
-.president .president-text p {
+.president .president-slide p {
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
@@ -755,10 +760,11 @@ body {
   height: 354px;
   line-height: 35px;
 }
-.president .president-text span {
+.president .president-slide span {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 187px;
+  width: 450px;
 }
 .president .dot-container {
   position: absolute;

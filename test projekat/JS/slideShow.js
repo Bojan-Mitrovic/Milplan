@@ -1,4 +1,5 @@
-$('.single-item').slick({
-    dots: true;
-
+$('#slideshow').slick({
+    dots: true,
+    speed: 300,
+    infinite: true,
 });
