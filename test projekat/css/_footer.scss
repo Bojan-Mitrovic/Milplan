@@ -1,11 +1,13 @@
-.footer {
+footer {
     background: #313131;
     height: 123px;
-    width: 1366px;
-    padding: 0 139px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    .footer-layout {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     .footer-details,
     .impressum {
         color: white;

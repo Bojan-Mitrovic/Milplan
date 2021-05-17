@@ -47,6 +47,9 @@
     color: white;
     line-height: 65px;
     font-weight: 300;
+    @media only screen and(max-width: 1200px) {
+        font-size: 35px;
+    }
 }
 
 @mixin heading2 {
@@ -54,21 +57,33 @@
     color: white;
     line-height: 65px;
     font-weight: 300;
+    @media only screen and(max-width: 1200px) {
+        font-size: 30px;
+    }
 }
 
 @mixin regular {
     font-weight: 300;
     font-size: 25px;
     line-height: 35px;
+    @media only screen and(max-width: 1200px) {
+        font-size: 20px;
+    }
 }
 
 @mixin small {
     font-size: 18px;
     font-weight: 300;
+    @media only screen and(max-width: 1200px) {
+        font-size: 15px;
+    }
 }
 
 @mixin btn {
     font-size: 16px;
     font-weight: 600;
     color: colors.$primary;
+    @media only screen and(max-width: 1200px) {
+        font-size: 14px;
+    }
 }
