@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <!-- slick.js  -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/091fa07559.js" crossorigin="anonymous"></script>
+
 
     <title>TEST</title>
 </head>
@@ -27,10 +27,15 @@
         <!-- header  -->
         <header class="header home-header ">
             <div class="logo">
-                <img src="./css/images/RZ_Logo-milplan_RGB.png" alt="">
+                <a href="./index.html">
+                    <img src="./css/images/RZ_Logo-milplan_RGB.png" alt="">
+                </a>
             </div>
             <!-- navbar  -->
             <nav class="nav-bar">
+                <div class="nav-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
                 <ul>
                     <li><a id="home" href="index.html">Home</a></li>
                     <li><a id="buro" class="link" href="büro.html">Büro</a></li>
@@ -58,7 +63,7 @@
         <section class="third-part">
             <div class="third-part-image"><img src="./css/images/Bildschirmfoto 2019-02-05 um 16.27.54.png" alt=""></div>
             <div class="third-part-text grid">
-                <div class="col-md-6 third-part-text">
+                <div class="col-md-6  third-part-text">
                     <h2>Persönlich und kompetent.<br>Ihre Ansprechperson</h2>
                     <p>Nathalie Mil, Geschäftsführerin<br> milplan GmbH, vereint Planungs-<br> Know-how mit Prozessmanagement <br>und Verhandlungsgeschick.</p>
                     <div class="first-page-btn btn-hover">
@@ -156,8 +161,8 @@
                     <img src="./css/images/2.png" alt="">
                 </div>
             </div>
-            <div class="president-text-wrapper grid txt-slider">
-                <div class="president-text col-xl-8  col-sm-6">
+            <div class="grid txt-slider">
+                <div class="president-text">
                     <h2>Kundenstimmen</h2>
                     <p>«Als Gebietsmanagerin LuzernOst führte Nathalie Mil die notwendigen Verhandlungen mit den unterschiedlichen Partnern und leitete Arbeitsgruppen. In allen Bereichen war sie äusserst zuverlässig und exakt. Es fällt Nathalie Mil leicht,
                         komplexe Projekte vom Projektbeschrieb bis zum Projektende zu führen. Sie handelt prozessorientiert und setzt Prioritäten. Dabei helfen ihr ihre hohe Sozialkompetenz, ihr Verhandlungsgeschick und ihre aussergewöhnlichen organisatorischen
@@ -165,14 +170,14 @@
                     </p>
                     <span>Pius Zängerle, Pärsident LuzernPlus</span>
                 </div>
-                <div class="president-text col-xl-8  col-sm-6">
+                <div class="president-text">
                     <h2>Lorem</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore aspernatur harum temporibus quod. Nemo et eaque ab nobis adipisci, sed laborum impedit temporibus deleniti dolore exercitationem, quam inventore a dolorem, deserunt
                         cumque voluptates molestiae animi dignissimos dolorum qui laboriosam!
                     </p>
                     <span>Lorem ipsum dolor sit.</span>
                 </div>
-                <div class="president-text col-xl-8  col-sm-6">
+                <div class="president-text">
                     <h2>Lorem, ipsum.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ut explicabo cumque voluptas, illum nobis laborum id facere exercitationem iure?
                     </p>
@@ -184,13 +189,13 @@
         <section class="collaborants-wrapper grid">
             <h2 class="collaborants-title col-md-7 col-sm-10">Ihr Projekt in guter Gesellschaft</h2>
             <div class="collaborants-row row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6">
                     <img src="./css/images/Image 14.png" alt=""></div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6">
                     <img src="./css/images/Image 15.png" alt=""></div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6">
                     <img src="./css/images/Image 16.png" alt=""></div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6">
                     <img src="./css/images/Image 17.png" alt=""></div>
             </div>
         </section>
@@ -211,11 +216,9 @@
             </div>
         </footer>
     </div>
-    <!-- <script type="text/javascript" src="./js/jquery-3.6.0.slim.js"></script>
-    <script type="text/javascript" src="./js/slick.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.slim.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/slideShow.js"></script>
     <script type="text/javascript" src="./js/activeNavElement.js "></script>
     <script type="text/javascript" src="./js/scrollHeader.js"></script>

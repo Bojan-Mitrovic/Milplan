@@ -158,3 +158,12 @@
         @include fonts.btn;
     }
 }
+
+.nav-btn {
+    color: colors.$primary;
+    cursor: pointer;
+    display: none;
+    @media screen and(max-width: 992px) {
+        display: block;
+    }
+}
