@@ -27,13 +27,36 @@ body {
 }
 
 .intro {
+    height: 665px;
     position: relative;
-    width: 100%;
-    background: url('./images/Bildschirmfoto\ 2019-02-05\ um\ 16.26.29@2x.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    @media screen and(max-width: 1400px) {
+        height: 665px;
+    }
+    @media screen and(max-width: 1200px) {
+        height: 580px;
+    }
+    @media screen and(max-width: 992px) {
+        height: 480px;
+    }
+    picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 665px;
+        object-fit: cover;
+        @media screen and(max-width: 1400px) {
+            height: 665px;
+        }
+        @media screen and(max-width: 1200px) {
+            height: 580px;
+        }
+        @media screen and(max-width: 992px) {
+            height: 480px;
+        }
+    }
     .intro-text {
         height: 100%;
         display: flex;
@@ -50,6 +73,10 @@ body {
         @media only screen and(max-width: 1200px) {
             font-size: 40px;
             line-height: 49px;
+        }
+        @media only screen and(max-width: 992px) {
+            font-size: 30px;
+            line-height: 35px;
         }
     }
 }
@@ -84,26 +111,32 @@ body {
 .third-part {
     position: relative;
     height: 90vh;
+    @media screen and(max-width: 1200px) {
+        height: auto;
+    }
     .third-part-image {
-        // position: absolute;
-        // width: 100%;
-        // height: 100%;
         img {
             position: absolute;
+            left: 0;
+            top: 0;
             width: 100%;
-            height: auto;
             object-fit: cover;
         }
     }
     .grid {
         display: flex;
         height: 100%;
-        padding-bottom: 200px;
         align-items: flex-end;
         justify-content: flex-end;
-        @media screen and(max-width: 992px) {}
         .third-part-text {
+            padding-bottom: 200px;
             z-index: 2;
+            @media screen and(max-width: 1200px) {
+                padding: 220px 0 150px 0;
+            }
+            @media screen and(max-width: 992px) {
+                padding: 100px 0 90px 0;
+            }
         }
     }
     h2 {
@@ -240,6 +273,18 @@ body {
     width: 720px;
     height: 64px;
     color: black;
+    @media screen and(max-width: 500px) {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media screen and(max-width: 777px) {
+    .projects-title-wrap {
+        display: flex;
+        justify-content: center;
+        max-width: 700px;
+    }
 }
 
 .projects-container {

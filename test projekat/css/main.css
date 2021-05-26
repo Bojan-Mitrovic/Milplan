@@ -643,13 +643,48 @@ body {
 }
 
 .intro {
+  height: 665px;
   position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 1400px) {
+  .intro {
+    height: 665px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro {
+    height: 580px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .intro {
+    height: 480px;
+  }
+}
+.intro picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: url("./images/Bildschirmfoto 2019-02-05 um 16.26.29@2x.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh;
+  max-height: 665px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1400px) {
+  .intro picture img {
+    height: 665px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro picture img {
+    height: 580px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .intro picture img {
+    height: 480px;
+  }
 }
 .intro .intro-text {
   height: 100%;
@@ -669,6 +704,12 @@ body {
   .intro h1 {
     font-size: 40px;
     line-height: 49px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .intro h1 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -700,7 +741,7 @@ body {
 @media only screen and (max-width: 996px) {
   .second-part h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 .second-part p {
@@ -714,6 +755,13 @@ body {
 @media only screen and (max-width: 1200px) {
   .second-part p {
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .second-part p {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -721,21 +769,37 @@ body {
   position: relative;
   height: 90vh;
 }
+@media screen and (max-width: 1200px) {
+  .third-part {
+    height: auto;
+  }
+}
 .third-part .third-part-image img {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 .third-part .grid {
   display: flex;
   height: 100%;
-  padding-bottom: 200px;
   align-items: flex-end;
   justify-content: flex-end;
 }
 .third-part .grid .third-part-text {
+  padding-bottom: 200px;
   z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+  .third-part .grid .third-part-text {
+    padding: 220px 0 150px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .third-part .grid .third-part-text {
+    padding: 100px 0 90px 0;
+  }
 }
 .third-part h2 {
   font-size: 40px;
@@ -754,7 +818,7 @@ body {
 @media only screen and (max-width: 996px) {
   .third-part h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 .third-part p {
@@ -767,6 +831,13 @@ body {
 @media only screen and (max-width: 1200px) {
   .third-part p {
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .third-part p {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -796,7 +867,7 @@ body {
 @media only screen and (max-width: 996px) {
   .fourth-title {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 
@@ -836,6 +907,7 @@ body {
 @media only screen and (max-width: 1200px) {
   .four-images-wrap .row .grid-item h3 {
     font-size: 30px;
+    line-height: 40px;
   }
 }
 .four-images-wrap .row .grid-item1 {
@@ -880,6 +952,7 @@ body {
 @media only screen and (max-width: 1200px) {
   .four-images-wrap .row .grid-item4 h3 {
     font-size: 30px;
+    line-height: 40px;
   }
 }
 .four-images-wrap .row .grid-item4 p {
@@ -948,10 +1021,23 @@ body {
 @media only screen and (max-width: 996px) {
   .projects-title {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .projects-title {
+    width: 300px;
+    text-align: center;
   }
 }
 
+@media screen and (max-width: 777px) {
+  .projects-title-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+  }
+}
 .projects-container {
   display: grid;
   position: relative;
@@ -1004,6 +1090,7 @@ body {
 @media only screen and (max-width: 1200px) {
   .project-item h3 {
     font-size: 30px;
+    line-height: 40px;
   }
 }
 .project-item p {
@@ -1120,7 +1207,7 @@ body {
 @media only screen and (max-width: 996px) {
   .president-wrapper .president-text h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 .president-wrapper .president-text p {
@@ -1133,6 +1220,13 @@ body {
 @media only screen and (max-width: 1200px) {
   .president-wrapper .president-text p {
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .president-wrapper .president-text p {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 .president-wrapper .president-text span {
@@ -1175,7 +1269,7 @@ body {
 @media only screen and (max-width: 996px) {
   .collaborants-wrapper .collaborants-title {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 777px) {
@@ -1233,7 +1327,7 @@ body {
 @media only screen and (max-width: 996px) {
   .buro-intro-text h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 
@@ -1275,7 +1369,7 @@ body {
 @media only screen and (max-width: 996px) {
   .nathalie-headline h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 
@@ -1293,6 +1387,13 @@ body {
 @media only screen and (max-width: 1200px) {
   .nathalie-text p {
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .nathalie-text p {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 .nathalie-text span {
@@ -1343,7 +1444,7 @@ body {
 @media only screen and (max-width: 996px) {
   .buro-logo-wrapper h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 .buro-logo-wrapper .buro-logo-container {
@@ -1376,7 +1477,7 @@ iframe {
 @media only screen and (max-width: 996px) {
   .headline-portfolio {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 
@@ -1446,7 +1547,7 @@ iframe {
 @media only screen and (max-width: 996px) {
   .portfolio-grid-wrap h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 .portfolio-grid-wrap .portfolio-grid-container {
@@ -1476,7 +1577,7 @@ iframe {
 @media only screen and (max-width: 996px) {
   .contact-headline h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
   }
 }
 

@@ -6,6 +6,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
+        mobileFirst: true,
         fade: true
     });
     $('.txt-slider').slick({
@@ -15,6 +16,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         dots: true,
+        mobileFirst: true,
         arrows: false,
     });
 });
