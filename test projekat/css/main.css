@@ -697,6 +697,11 @@ body {
     height: 480px;
   }
 }
+@media screen and (max-width: 778px) {
+  .intro {
+    height: 400px;
+  }
+}
 .intro picture img {
   position: absolute;
   top: 0;
@@ -718,6 +723,11 @@ body {
 @media screen and (max-width: 992px) {
   .intro picture img {
     height: 480px;
+  }
+}
+@media screen and (max-width: 778px) {
+  .intro picture img {
+    height: 400px;
   }
 }
 .intro .intro-text {
@@ -744,6 +754,13 @@ body {
   .intro h1 {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .intro h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -778,6 +795,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .second-part h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .second-part p {
   font-weight: 300;
   font-size: 25px;
@@ -797,6 +820,12 @@ body {
   .second-part p {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .second-part p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -857,6 +886,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .third-part h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .third-part p {
   font-weight: 300;
   font-size: 25px;
@@ -876,6 +911,12 @@ body {
     line-height: 25px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .third-part p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 .fourth-container {
   position: relative;
@@ -891,7 +932,7 @@ body {
   position: relative;
   margin: 195px 0 41px 15px;
   color: black;
-  width: 720px;
+  width: auto;
   height: 76px;
 }
 @media only screen and (max-width: 1200px) {
@@ -904,6 +945,12 @@ body {
   .fourth-title {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .fourth-title {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -944,6 +991,12 @@ body {
   .four-images-wrap .row .grid-item h3 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .four-images-wrap .row .grid-item h3 {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 .four-images-wrap .row .grid-item1 {
@@ -989,6 +1042,12 @@ body {
   .four-images-wrap .row .grid-item4 h3 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .four-images-wrap .row .grid-item4 h3 {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 .four-images-wrap .row .grid-item4 p {
@@ -1060,6 +1119,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .projects-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 @media screen and (max-width: 500px) {
   .projects-title {
     width: 300px;
@@ -1128,6 +1193,12 @@ body {
   .project-item h3 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .project-item h3 {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 .project-item p {
@@ -1248,6 +1319,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .president-wrapper .president-text h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .president-wrapper .president-text p {
   font-weight: 300;
   font-size: 25px;
@@ -1265,6 +1342,12 @@ body {
   .president-wrapper .president-text p {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .president-wrapper .president-text p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 .president-wrapper .president-text span {
@@ -1308,6 +1391,12 @@ body {
   .collaborants-wrapper .collaborants-title {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .collaborants-wrapper .collaborants-title {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 777px) {
@@ -1368,6 +1457,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .buro-intro-text h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 
 .nathalie-container {
   position: relative;
@@ -1410,6 +1505,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .nathalie-headline h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 
 .nathalie-text {
   position: relative;
@@ -1432,6 +1533,12 @@ body {
   .nathalie-text p {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .nathalie-text p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 .nathalie-text span {
@@ -1485,6 +1592,12 @@ body {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .buro-logo-wrapper h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .buro-logo-wrapper .buro-logo-container {
   display: flex;
   justify-content: space-between;
@@ -1516,6 +1629,12 @@ iframe {
   .headline-portfolio {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .headline-portfolio {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -1588,6 +1707,12 @@ iframe {
     line-height: 35px;
   }
 }
+@media only screen and (max-width: 778px) {
+  .portfolio-grid-wrap h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .portfolio-grid-wrap .portfolio-grid-container {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -1616,6 +1741,12 @@ iframe {
   .contact-headline h2 {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .contact-headline h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 

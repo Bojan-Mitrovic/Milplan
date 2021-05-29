@@ -40,6 +40,9 @@ body {
     @media screen and(max-width: 992px) {
         height: 480px;
     }
+    @media screen and(max-width: 778px) {
+        height: 400px;
+    }
     picture img {
         position: absolute;
         top: 0;
@@ -55,6 +58,9 @@ body {
         }
         @media screen and(max-width: 992px) {
             height: 480px;
+        }
+        @media screen and(max-width: 778px) {
+            height: 400px;
         }
     }
     .intro-text {
@@ -77,6 +83,11 @@ body {
         @media only screen and(max-width: 992px) {
             font-size: 30px;
             line-height: 35px;
+        }
+        @media only screen and(max-width: 778px) {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -165,7 +176,7 @@ body {
     position: relative;
     margin: 195px 0 41px 15px;
     color: black;
-    width: 720px;
+    width: auto;
     height: 76px;
 }
 
