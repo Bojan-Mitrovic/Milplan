@@ -785,6 +785,7 @@ body {
   width: 622px;
   color: white;
   padding-bottom: 40px;
+  width: auto;
 }
 @media only screen and (max-width: 1200px) {
   .second-part p {
