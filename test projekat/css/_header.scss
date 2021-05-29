@@ -9,6 +9,7 @@
     padding: 25px 60px 25px 60px;
     margin: 40px 0 203px 0;
     z-index: 5;
+    transition: 0.3s;
     @media screen and(max-width: 993px) {
         margin-top: 80px;
     }
@@ -29,27 +30,26 @@
         align-items: center;
         ul {
             display: flex;
+            gap: 50px;
             align-items: center;
             list-style-type: none;
             @media screen and(max-width: 993px) {
-                flex-direction: column;
-                gap: 25px;
-                top: 20px;
                 display: none;
+                flex-direction: column;
+                gap: 50px;
+                top: 20px;
+                .link {
+                    font-size: 30px;
+                }
             }
             li {
                 a {
-                    padding-left: 50px;
                     font-size: 18px;
                     text-decoration: none;
                     letter-spacing: 21;
                 }
             }
         }
-    }
-    // active page 
-    ul li.active a {
-        color: black!important;
     }
 }
 
@@ -97,4 +97,32 @@
 .nav-scrolled {
     background: colors.$primary;
     color: white;
+}
+
+// nav menu on click
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+// nav animation
+@keyframes slideLeft {
+    from {
+        opacity: 0.2;
+        transform: translateX(360px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.nav-slide {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }

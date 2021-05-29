@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <!-- slick.js  -->
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/091fa07559.js" crossorigin="anonymous"></script>
 
 
@@ -35,7 +35,7 @@
         <header class="header home-header ">
             <div class="logo">
                 <a href="./index.html">
-                    <img src="./css/images/RZ_Logo-milplan_RGB.png" alt="">
+                    <img id="logo-mobile" src="./css/images/RZ_Logo-milplan_RGB.png" alt="">
                 </a>
             </div>
             <!-- navbar  -->
@@ -43,8 +43,11 @@
                 <div class="nav-btn">
                     <i class="fas fa-bars fa-2x"></i>
                 </div>
-                <ul>
-                    <li><a id="home" href="index.html">Home</a></li>
+                <div class="close-nav">
+                    <i class="fas fa-times fa-3x"></i>
+                </div>
+                <ul id="nav-list">
+                    <li><a class='link' id="home" href="index.html">Home</a></li>
                     <li><a id="buro" class="link" href="büro.html">Büro</a></li>
                     <li><a id="dienstleistungen" class="link" href="dienstleistungen.html">Dienstleistungen</a></li>
                     <li><a id="portfolio" class="link" href="portfolio.html">Portfolio</a></li>

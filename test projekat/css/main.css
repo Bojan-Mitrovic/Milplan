@@ -58,6 +58,7 @@ a {
   padding: 25px 60px 25px 60px;
   margin: 40px 0 203px 0;
   z-index: 5;
+  transition: 0.3s;
 }
 @media screen and (max-width: 993px) {
   .header {
@@ -82,25 +83,25 @@ a {
 }
 .header .nav-bar ul {
   display: flex;
+  gap: 50px;
   align-items: center;
   list-style-type: none;
 }
 @media screen and (max-width: 993px) {
   .header .nav-bar ul {
-    flex-direction: column;
-    gap: 25px;
-    top: 20px;
     display: none;
+    flex-direction: column;
+    gap: 50px;
+    top: 20px;
+  }
+  .header .nav-bar ul .link {
+    font-size: 30px;
   }
 }
 .header .nav-bar ul li a {
-  padding-left: 50px;
   font-size: 18px;
   text-decoration: none;
   letter-spacing: 21;
-}
-.header ul li.active a {
-  color: black !important;
 }
 
 .home-header {
@@ -142,6 +143,31 @@ a {
 .nav-scrolled {
   background: #DC514C;
   color: white;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0.2;
+    transform: translateX(360px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav-slide {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
 .first-page-btn {
@@ -347,6 +373,14 @@ a {
   .nav-btn {
     display: block;
   }
+}
+
+.close-nav {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
 }
 
 footer {
@@ -779,6 +813,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .third-part .grid {
@@ -1045,6 +1080,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 @media screen and (max-width: 992px) {
   .projects-container {
@@ -1157,26 +1193,27 @@ body {
     margin-right: auto;
   }
 }
-.president-wrapper .txt-slider .slick-list {
+.president-wrapper .txt-slider {
   height: 100% !important;
   margin: 0 0 0 33.33%;
+  width: auto;
 }
 @media only screen and (max-width: 1400px) {
-  .president-wrapper .txt-slider .slick-list {
+  .president-wrapper .txt-slider {
     width: 50%;
     position: absolute;
     right: 0;
   }
 }
 @media only screen and (max-width: 992px) {
-  .president-wrapper .txt-slider .slick-list {
-    width: 300px;
+  .president-wrapper .txt-slider {
+    width: 42%;
     position: absolute;
     right: 0;
   }
 }
 @media only screen and (max-width: 777px) {
-  .president-wrapper .txt-slider .slick-list {
+  .president-wrapper .txt-slider {
     width: 100%;
     position: relative;
     margin: 0;
